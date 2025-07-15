@@ -113,3 +113,61 @@ This was a highly productive session. We were able to:
 - Define our next steps with clear goals and responsibilities.
 
 We aim to have meaningful progress to showcase at the next milestone review.
+
+## 📝 Team Meeting Notes – July 14, 2025
+
+**🗓 Date:** July 14, 2025  
+**🕒 Time:** 11:45 AM – 1:00 PM (EST)  
+**📍 Location:** Virtual (Zoom/Google Meet)  
+**👥 Attendees:** All team members were present
+
+---
+
+## 🧩 Overview
+
+This meeting was conducted among team members to report on individual progress,
+review data analysis efforts, and plan the remaining deliverables for the
+milestone.
+
+---
+
+## 🗂 Agenda & Discussion Points
+
+### ✅ Task Updates
+
+- Each team member shared updates on their previously assigned tasks.
+- Members explained their analysis approaches and findings based on the dataset.
+
+### 📊 Data Analysis Review
+
+- Discussed the **technical and non-technical** aspects of the analysis.
+- Reflected on why specific analyses were chosen and how they align with the
+  project goals.
+
+### 🎯 Focus on Deliverables
+
+- Reviewed our **first deliverables**, placing emphasis on:
+  - 📌 Technical Analysis  
+  - 📌 Non-Technical Analysis
+- Ensured alignment on expectations, formats, and timelines.
+
+### 🧠 Planning the Next Steps
+
+- Assigned the remaining deliverables to team members.
+- Clarified who is responsible for what before our **next meeting on Wednesday**.
+
+---
+
+## ✅ Action Items
+
+| Task | Responsible Member | Deadline |
+|------|--------------------|----------|
+| Complete remaining deliverables | All assigned members | Before Wednesday |
+| Refine technical/non-technical analyses | Respective members | Before next meeting|
+| Prepare updates for Wednesday's check-in | All members | July 16, 2025 |
+
+---
+
+> ⏳ **Next Meeting:** Wednesday, July 16, 2025  
+
+---
