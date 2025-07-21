@@ -68,29 +68,25 @@ still consistently increasing or decreasing.
     - More robust to outliers and better at detecting threshold effects where
   relationships change at certain values.
 
-- **Phase 1 Findings:**
+- **Phase 1 Results:**
 
   - All correlation coefficients across all three techniques were very weak (< 0.1).
 
   - **Strongest Correlations by Technique for the Unmodified Data:**
-  
-    Delay Probability:
 
-    - Pearson: port_congestion_level (+0.0090)
-    - Spearman: route_risk_level (-0.0069)
-    - Kendall: route_risk_level (-0.0046)
+    <!-- markdownlint-disable MD013 -->
 
-    Delivery Time Deviation:
-
-    - Pearson: port_congestion_level (+0.0106)
-    - Spearman: port_congestion_level (+0.0118)
-    - Kendall: port_congestion_level (+0.0079)
-
-    ETA Variation Hours:
-
-    - Pearson: supplier_reliability_score (+0.0079)
-    - Spearman: lead_time_days (-0.0087)
-    - Kendall: lead_time_days (-0.0058)
+| Method     | Target                   | Top Feature              | Correlation Factor |
+|------------|--------------------------|--------------------------|--------------------|
+| Pearson    | delay_probability        | port_congestion_level    | +0.0090            |
+|            | delivery_time_deviation  | port_congestion_level    | +0.0106            |
+|            | eta_variation_hours      | supplier_reliability_score | +0.0079          |
+| Spearman   | delay_probability        | port_congestion_level    | +0.0067            |
+|            | delivery_time_deviation  | port_congestion_level    | +0.0118            |
+|            | eta_variation_hours      | lead_time_days           | -0.0087            |
+| Kendall’s Tau | delay_probability    | route_risk_level         | -0.0046            |
+|            | delivery_time_deviation  | port_congestion_level    | +0.0079            |
+|            | eta_variation_hours      | lead_time_days           | -0.0058            |
 
 #### Phase 2
 
@@ -108,30 +104,24 @@ adhere to the original dataset description.
   - Unit Standardization: `historical_demand`: Applied consistent unit interpretation
   and scaling to resolve
 
-- **Phase 2 Findings:**
+- **Phase 2 Results:**
 
   - Correlation coefficients remained weak (< 0.1) even after data corrections,
 indicating that measurement inconsistencies were not the primary cause of weak relationships.
 
   - **Strongest Correlations by Technique for the Modified Data:**
-  
-    Delay Probability:
 
-    - Pearson: port_congestion_level (+0.0089)
-    - Spearman: route_risk_level (-0.0064)
-    - Kendall: route_risk_level (-0.0044)
-
-    Delivery Time Deviation:
-
-    - Pearson: port_congestion_level (+0.0106)
-    - Spearman: port_congestion_level (+0.0118)
-    - Kendall: port_congestion_level (+0.0079)
-
-    ETA Variation Hours:
-
-    - Pearson: supplier_reliability_score (+0.0078)
-    - Spearman: lead_time_days (-0.0085)
-    - Kendall: lead_time_days (-0.0057)
+| Method     | Target                   | Top Feature                | Correlation Factor |
+|------------|--------------------------|----------------------------|--------------------|
+| Pearson    | delay_probability        | port_congestion_level      | +0.0089            |
+|            | delivery_time_deviation  | port_congestion_level      | +0.0106            |
+|            | eta_variation_hours      | supplier_reliability_score | +0.0078            |
+| Spearman   | delay_probability        | route_risk_level           | -0.0065            |
+|            | delivery_time_deviation  | port_congestion_level      | +0.0118            |
+|            | eta_variation_hours      | disruption_likelihood_score | +0.0098           |
+| Kendall’s Tau | delay_probability    | route_risk_level           | -0.0044            |
+|            | delivery_time_deviation  | port_congestion_level / handling_equipment_availability     | +0.0079/ -0.0079            |
+|            | eta_variation_hours      | disruption_likelihood_score | +0.0069           |
 
 #### 2.4 Interaction Effects Analysis
 
@@ -141,33 +131,88 @@ demonstrate stronger relationships with delivery delays than individual factors 
 
 - **Interaction Features Created:**
   - `traffic_x_weather`: Traffic congestion × Weather severity
-  - `port_x_customs`: Port congestion × Customs clearance time  
+  - `port_x_customs`: Port congestion × Customs clearance time
   - `route_x_driver`: Route risk × Driver behavior score
 
 - **Method:** Applied Pearson correlation analysis to interaction features vs.
 delay indicators
 
-- **Findings:** Interaction correlations remained weak (< 0.1), showing no
-substantial improvement over individual factors.
+- **Results:**
+  - Interaction correlations remained weak (< 0.1), showing no improvement over individual factors.
+  - **Multivariate Interaction Effects:**
+
+Phase 1
+
+| Target                  | Top Interaction Feature | Correlation Factor |
+|-------------------------|-------------------------|--------------------|
+| delay_probability       | port_x_customs          | +0.0096            |
+| delivery_time_deviation | traffic_x_weather       | -0.00098           |
+| eta_variation_hours     | route_x_driver          | -0.0038            |
+
+Phase 2
+
+| Target                  | Top Interaction Feature | Correlation Factor |
+|-------------------------|-------------------------|--------------------|
+| delay_probability       | traffic_x_equipment     | +0.0411            |
+| delivery_time_deviation | fuel_x_port             | +0.018             |
+| eta_variation_hours     | -                       | —                  |
 
 ---
 
 ### 3. Results Summary
 
----
+Each method was used to examine the relationships between 16 features and 3
+target variables.
+The findings indicated consistently weak correlations across all methods.
+However, Spearman and Kendall provided added robustness by detecting non-linear
+and ordinal relationships.
+Although individual features showed weak correlations, the combinations of
+features demonstrated even weaker correlations based on the Pearson analysis
 
-### 4. Possible Flaws
+### Possible Flaws in the Analysis Strategy
+
+1. **Multivariate Analysis is Limited to Linear Relationships**
+   Pearson correlation only captures linear relationships. If the variables
+   interact in nonlinear ways, important patterns may be overlooked.
+
+2. **Lack of Normalization in Multivariate Analysis**
+   No normalization or scaling was applied. Differences in variable units (e.g.,
+   scores from 1–5 vs. 1–100) can distort results when multiplied.
+
+3. **Overstated Effects of Individual Variables**
+   A strong correlation in the multivariate results may be driven by one
+   variable alone, rather than by the intended interaction effect.
+
+4. **Manual Interaction Feature Selection**
+   Interaction features were created manually. Potentially significant
+   interactions may be missing.
+
+5. **No Causal or Directional Analysis**
+   The analysis did not explore causality or directionality, limiting deeper insights.
 
 ---
 
 ### 5. Possible Alternative Approaches
 
+- **Use Nonlinear or Rank-Based Correlation**
+  Incorporate Spearman or Kendall in multivariate analysis; also standardize
+  features before interaction.
+
+- **Apply Partial Correlation or Interaction-Aware Regression**
+   Partial correlation and regression models with interaction terms can help
+   isolate the effect of interactions after accounting for individual variables.
+
+- **Automate Interaction Discovery**
+  Use polynomial feature generation or tree-based models such as Random Forests
+  that can naturally learn and evaluate interactions between features.
+
+- **Explore Causal Relationships**
+  If causality or direction matters, consider time-series-based methods like
+  Granger causality or Structural Equation Modeling (SEM) for more advanced
+  causal analysis.
+
 ---
 
 ### 6. Replication and Files
-
----
-
-### 7. Conclusion
 
 ---
