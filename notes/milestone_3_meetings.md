@@ -171,3 +171,37 @@ milestone.
 > ⏳ **Next Meeting:** Wednesday, July 16, 2025  
 
 ---
+
+## 📌 Meeting Notes — July 16, 2025
+
+**Meeting Type**: Milestone 3 — Data Analysis  
+**Date**: Wednesday, July 16, 2025  
+**Time**: 11:30 AM – ~12:45 PM (EDT)  
+**Location**: Online  
+**Attendees**: All group members were present
+
+---
+
+## 🧠 Meeting Summary
+
+The team held another productive session as part of Milestone 3, focused on
+the ongoing data analysis. During the meeting, we:
+
+- **Reviewed all current deliverables** for Milestone 3.
+- Had an in-depth discussion around the two main Jupyter notebooks:
+  - 📊 **Correlation analysis**
+  - ⏱️ **Time series analysis**
+- All members actively contributed suggestions and shared insights during the discussion.
+- Tasks were redistributed among the team to ensure all remaining
+  deliverables are completed **before our next meeting on Monday, July 21**,
+  which marks the final submission deadline.
+
+---
+
+## ✅ Action Items Before July 21
+
+- Complete assigned analysis tasks  
+- Finalize documentation and visualizations  
+- Prepare content for submission
+
+---
