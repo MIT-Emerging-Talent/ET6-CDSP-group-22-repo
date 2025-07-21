@@ -166,7 +166,22 @@ substantial improvement over individual factors.
 
 ### 6. Replication and Files
 
----
+- **Phase 1**: Correlation analysis using the original dataset as-is  
+  - Dataset: [cleaned_dataset.csv](../1_datasets/cleaned_and_processed_data/cleaned_dataset.csv)
+  - Notebook: [Correlation_Analysis_Phase_1.ipynb](notebooks/Correlation_Analysis_Phase_1.ipynb)
+
+- **Phase 2**: Correlation analysis using a modified version of the dataset
+aligned with the data documentation  
+  - Dataset:
+[cleaned_secondApproach_dataset.csv](../1_datasets/cleaned_and_processed_data/cleaned_secondApproach_data.csv)  
+  - Notebook: [Correlation_Analysis_Phase_2.ipynb](notebooks/Correlation_Analysis_Phase_2.ipynb)
+
+To replicate the analysis:
+
+Open each notebook in an environment, ensure the dataset file is accessible,
+and run all cells sequentially.
+No additional setup is required beyond a standard Python environment with common
+data analysis libraries.
 
 ### 7. Conclusion
 
