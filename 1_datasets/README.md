@@ -102,6 +102,6 @@ To recreate the cleaned dataset:
 2. **Run the cleaning script**  
    - Drops 3 irrelevant columns: `vehicle_gps_latitude`, `vehicle_gps_longitude`,`fuel_consumption_rate`
    - Confirms no missing or duplicate values
-   - Saves output as `cleaned_data.csv`
+   - Saves output as [`cleaned_dataset.csv`](../1_datasets/cleaned_and_processed_data/cleaned_dataset.csv).
 
-The script is available in `final_data_with_scripts/cleaning_script.py`.
+The script is available in [`2_data_preparation/clean_dataset.py`](../2_data_preparation/clean_dataset.py).
