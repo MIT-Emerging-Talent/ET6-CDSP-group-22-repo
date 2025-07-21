@@ -146,7 +146,7 @@ milestone.
 
 ### 🎯 Focus on Deliverables
 
-- Reviewed our **first deliverables**, placing emphasis on:
+- Reviewed our  **deliverables**, placing emphasis on:
   - 📌 Technical Analysis  
   - 📌 Non-Technical Analysis
 - Ensured alignment on expectations, formats, and timelines.
