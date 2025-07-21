@@ -1,9 +1,10 @@
 # Data Exploration
 
 This exploration is based on the
-[`cleaned_data.csv`](../1_datasets/final_data_with_scripts/cleaned_data.csv)
+[`cleaned_dataset.csv`](../1_datasets/cleaned_and_processed_data/cleaned_dataset.csv)
 file, which contains the final cleaned version of the supply chain dataset. The
-file is located in the `1_datasets/final_data_with_scripts/` directory of the
+file is located in the [**`1_datasets/cleaned_and_processed_data/`**](../1_datasets/cleaned_and_processed_data)
+directory of the
 repository. The purpose of this phase is to become familiar with the structure,
 quality, and general characteristics of the data before proceeding to more
 rigorous analysis or modeling. Importantly, this stage is observational: it
@@ -22,9 +23,11 @@ early indicators of trends or data quality issues.
 
 ### Dataset Explored
 
-The notebook works with a dataset named `supply_chain_data.csv`, located in the
-`0_datasets` directory. This dataset is assumed to contain structured
-information relevant to supply chain operations — such as order history,
+The notebook works with a dataset named
+[**`cleaned_dataset.csv`**](../1_datasets/cleaned_and_processed_data/cleaned_dataset.csv),
+located in the[**`1_datasets`**](1_datasets) directory. This dataset is assumed to
+contain structured information relevant to supply chain operations — such as
+order history,
 delivery performance, stock levels, supplier information, or similar features,
 depending on the context of the broader project.
 
@@ -71,8 +74,8 @@ selecting appropriate analytical methods.
   project.
 
 - No transformations are written back to the original dataset. The integrity of
-  files in `0_datasets` remains untouched, ensuring full reproducibility by any
-  third party who wishes to clone and rerun the repository.
+  files in [**`1_datasets`**](1_datasets) remains untouched, ensuring full
+  reproducibility by any third party who wishes to clone and rerun the repository.
 
 ---
 
