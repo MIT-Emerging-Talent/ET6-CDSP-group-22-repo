@@ -25,7 +25,6 @@
   roles in the analysis
 - Agreed to explore the following types of analysis in our next steps:
   - **Time series analysis**
-  - **PCA (Principal Component Analysis)**
   - **Correlation analysis**
 
 ---
@@ -113,3 +112,130 @@ This was a highly productive session. We were able to:
 - Define our next steps with clear goals and responsibilities.
 
 We aim to have meaningful progress to showcase at the next milestone review.
+
+## 📝 Team Meeting Notes – July 14, 2025
+
+**🗓 Date:** July 14, 2025
+**🕒 Time:** 11:45 AM – 1:00 PM (EST)
+**📍 Location:** Virtual (Zoom/Google Meet)
+**👥 Attendees:** All team members were present
+
+---
+
+## 🧩 Overview
+
+This meeting was conducted among team members to report on individual progress,
+review data analysis efforts, and plan the remaining deliverables for the
+milestone.
+
+---
+
+## 🗂 Agenda & Discussion Points
+
+### ✅ Task Updates
+
+- Each team member shared updates on their previously assigned tasks.
+- Members explained their analysis approaches and findings based on the dataset.
+
+### 📊 Data Analysis Review
+
+- Discussed the **technical and non-technical** aspects of the analysis.
+- Reflected on why specific analyses were chosen and how they align with the
+  project goals.
+
+### 🎯 Focus on Deliverables
+
+- Reviewed our  **deliverables**, placing emphasis on:
+  - 📌 Technical Analysis
+  - 📌 Non-Technical Analysis
+- Ensured alignment on expectations, formats, and timelines.
+
+### 🧠 Planning the Next Steps
+
+- Assigned the remaining deliverables to team members.
+- Clarified who is responsible for what before our **next meeting on Wednesday**.
+
+---
+
+## ✅ Action Items
+
+| Task | Responsible Member | Deadline |
+|------|--------------------|----------|
+| Complete remaining deliverables | All assigned members | Before Wednesday |
+| Refine technical/non-technical analyses | Respective members | Before next meeting|
+| Prepare updates for Wednesday's check-in | All members | July 16, 2025 |
+
+---
+
+> ⏳ **Next Meeting:** Wednesday, July 16, 2025
+
+---
+
+## 📌 Meeting Notes — July 16, 2025
+
+**Meeting Type**: Milestone 3 — Data Analysis
+**Date**: Wednesday, July 16, 2025
+**Time**: 11:30 AM – ~12:45 PM (EDT)
+**Location**: Online
+**Attendees**: All group members were present
+
+---
+
+## 🧠 Meeting Summary
+
+The team held another productive session as part of Milestone 3, focused on
+the ongoing data analysis. During the meeting, we:
+
+- **Reviewed all current deliverables** for Milestone 3.
+- Had an in-depth discussion around the two main Jupyter notebooks:
+  - 📊 **Correlation analysis**
+  - ⏱️ **Time series analysis**
+- All members actively contributed suggestions and shared insights during the discussion.
+- Tasks were redistributed among the team to ensure all remaining
+  deliverables are completed **before our next meeting on Monday, July 21**,
+  which marks the final submission deadline.
+
+---
+
+## ✅ Action Items Before July 21
+
+- Complete assigned analysis tasks
+- Finalize documentation and visualizations
+- Prepare content for submission
+
+---
+
+## 📌 Meeting Notes — July 21, 2025
+
+**🕒 Time:** 11:30 AM  
+**👥 Attendees:** All group members present  
+**🎯 Purpose:** Final meeting for **Milestone 3 – Data Analysis**
+
+---
+
+### ✅ Summary of Discussions & Actions
+
+- This was our **final meeting** for Milestone 3, focused on completing and
+  reviewing the **data analysis phase**.
+- We **finalized all deliverables**, ensuring everything aligned with the project
+  goals and GitHub structure.
+- The team:
+  - Reviewed all notebooks collaboratively.
+  - Merged final **pull requests** after validation.
+  - Reorganized **folders and files** to match GitHub guidelines.
+  - Ensured all documentation and code were properly structured.
+- Each member was **reminded to double-check** their contributions for
+  consistency, accuracy, and completeness.
+- We also discussed analytical insights and made final adjustments to the
+  notebooks before submission.
+- Final sync-up on naming conventions, formatting, and file dependencies.
+
+---
+
+### ✅ Outcome
+
+- **Milestone 3 is now complete.**
+- The project repository is now clean, updated, and ready for evaluation.
+- The team is prepared to move on to the next phase with confidence.
+
+---
