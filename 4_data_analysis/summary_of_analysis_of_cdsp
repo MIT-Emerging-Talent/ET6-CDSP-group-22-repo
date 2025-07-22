@@ -57,14 +57,14 @@ into operational efficiency, risk factors, and service reliability.
   tools, such as `pandas`, without modifying the source file. All exploration is
   done in-memory to preserve data integrity.
 
-  ![Figure I](Images/Images_1.png)
+  ![Figure I](images/images_1.png)
 
 - **Descriptive Statistics**: Basic statistics are computed to understand
   central tendencies, variability, and data completeness. This includes
   examining the mean, median, standard deviation, minimum and maximum values,
   and missing data counts.
 
-![Figure II](Images/Images_2.png)
+![Figure II](images/images_2.png)
 
 - **Data Cleaning**: We removed some irrelevant columns to focus on useful
   features. We also confirmed there are no missing values or duplicate rows.
@@ -157,7 +157,7 @@ close to zero.
 > This chart shows that even our "strongest" correlations across all three
 > statistical methods are extremely weak.
 
-![Figure III](Images/Images_3.png)
+![Figure III](images/images_3.png)
 
 ## Phase II
 
@@ -220,3 +220,32 @@ like SHAP, could enhance predictive capability while maintaining transparency
 
 Incorporating time-series analysis would also be valuable, as delay effects
 often unfold over time—something not captured in our current static framework.
+
+![Figure IV](images/images_4.jpeg)
+
+![Figure V](images/images_5.jpeg)
+
+### Conclusion
+
+This analysis aimed to identify operational features most associated  
+with delivery delays by applying correlation analysis across various  
+techniques. While all individual and interaction-based correlations  
+were consistently weak (typically < 0.01), several patterns emerged.
+
+Notably, **port congestion level** consistently ranked as the top  
+correlated feature across both original and corrected datasets. In  
+Phase 2, additional features such as **lead time** and **route risk**  
+began to appear more prominently. Despite the weak correlations,  
+these features—particularly port congestion—emerged as the most  
+influential within the limitations of the dataset.
+
+Multivariate interaction analysis reinforced this observation, as  
+the combination of **port congestion** and **customs clearance time**  
+yielded the strongest (yet still weak) association with delay  
+probability.
+
+Overall, while no strong predictors of delay were identified, the  
+repeated appearance of **port congestion level** suggests it plays a  
+comparatively more central role in delay dynamics. Future work using  
+more advanced, nonlinear, or causal modeling techniques may uncover  
+deeper insights beyond the limitations of basic correlation analysis.
