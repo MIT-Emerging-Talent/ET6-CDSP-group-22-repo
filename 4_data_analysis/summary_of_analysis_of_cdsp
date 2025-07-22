@@ -57,14 +57,14 @@ into operational efficiency, risk factors, and service reliability.
   tools, such as `pandas`, without modifying the source file. All exploration is
   done in-memory to preserve data integrity.
 
-  ![Figure I](images/images_1.png)
+  ![Figure I](images/figure_1.png)
 
 - **Descriptive Statistics**: Basic statistics are computed to understand
   central tendencies, variability, and data completeness. This includes
   examining the mean, median, standard deviation, minimum and maximum values,
   and missing data counts.
 
-![Figure II](images/images_2.png)
+![Figure II](images/figure_2.png)
 
 - **Data Cleaning**: We removed some irrelevant columns to focus on useful
   features. We also confirmed there are no missing values or duplicate rows.
@@ -157,7 +157,7 @@ close to zero.
 > This chart shows that even our "strongest" correlations across all three
 > statistical methods are extremely weak.
 
-![Figure III](images/images_3.png)
+![Figure III](images/figure_3.png)
 
 ## Phase II
 
@@ -221,9 +221,9 @@ like SHAP, could enhance predictive capability while maintaining transparency
 Incorporating time-series analysis would also be valuable, as delay effects
 often unfold over time—something not captured in our current static framework.
 
-![Figure IV](images/images_4.jpeg)
+![Figure IV](images/figure_4.jpeg)
 
-![Figure V](images/images_5.jpeg)
+![Figure V](images/figure_5.jpeg)
 
 ### Conclusion
 
