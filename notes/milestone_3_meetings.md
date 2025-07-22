@@ -204,3 +204,38 @@ the ongoing data analysis. During the meeting, we:
 - Prepare content for submission
 
 ---
+
+## 📌 Meeting Notes — July 21, 2025
+
+**🕒 Time:** 11:30 AM  
+**👥 Attendees:** All group members present  
+**🎯 Purpose:** Final meeting for **Milestone 3 – Data Analysis**
+
+---
+
+### ✅ Summary of Discussions & Actions
+
+- This was our **final meeting** for Milestone 3, focused on completing and
+  reviewing the **data analysis phase**.
+- We **finalized all deliverables**, ensuring everything aligned with the project
+  goals and GitHub structure.
+- The team:
+  - Reviewed all notebooks collaboratively.
+  - Merged final **pull requests** after validation.
+  - Reorganized **folders and files** to match GitHub guidelines.
+  - Ensured all documentation and code were properly structured.
+- Each member was **reminded to double-check** their contributions for
+  consistency, accuracy, and completeness.
+- We also discussed analytical insights and made final adjustments to the
+  notebooks before submission.
+- Final sync-up on naming conventions, formatting, and file dependencies.
+
+---
+
+### ✅ Outcome
+
+- **Milestone 3 is now complete.**
+- The project repository is now clean, updated, and ready for evaluation.
+- The team is prepared to move on to the next phase with confidence.
+
+---
