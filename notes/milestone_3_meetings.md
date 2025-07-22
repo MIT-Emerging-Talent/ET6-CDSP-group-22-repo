@@ -25,7 +25,6 @@
   roles in the analysis
 - Agreed to explore the following types of analysis in our next steps:
   - **Time series analysis**
-  - **PCA (Principal Component Analysis)**
   - **Correlation analysis**
 
 ---
@@ -116,9 +115,9 @@ We aim to have meaningful progress to showcase at the next milestone review.
 
 ## 📝 Team Meeting Notes – July 14, 2025
 
-**🗓 Date:** July 14, 2025  
-**🕒 Time:** 11:45 AM – 1:00 PM (EST)  
-**📍 Location:** Virtual (Zoom/Google Meet)  
+**🗓 Date:** July 14, 2025
+**🕒 Time:** 11:45 AM – 1:00 PM (EST)
+**📍 Location:** Virtual (Zoom/Google Meet)
 **👥 Attendees:** All team members were present
 
 ---
@@ -147,7 +146,7 @@ milestone.
 ### 🎯 Focus on Deliverables
 
 - Reviewed our  **deliverables**, placing emphasis on:
-  - 📌 Technical Analysis  
+  - 📌 Technical Analysis
   - 📌 Non-Technical Analysis
 - Ensured alignment on expectations, formats, and timelines.
 
@@ -168,16 +167,16 @@ milestone.
 
 ---
 
-> ⏳ **Next Meeting:** Wednesday, July 16, 2025  
+> ⏳ **Next Meeting:** Wednesday, July 16, 2025
 
 ---
 
 ## 📌 Meeting Notes — July 16, 2025
 
-**Meeting Type**: Milestone 3 — Data Analysis  
-**Date**: Wednesday, July 16, 2025  
-**Time**: 11:30 AM – ~12:45 PM (EDT)  
-**Location**: Online  
+**Meeting Type**: Milestone 3 — Data Analysis
+**Date**: Wednesday, July 16, 2025
+**Time**: 11:30 AM – ~12:45 PM (EDT)
+**Location**: Online
 **Attendees**: All group members were present
 
 ---
@@ -200,8 +199,8 @@ the ongoing data analysis. During the meeting, we:
 
 ## ✅ Action Items Before July 21
 
-- Complete assigned analysis tasks  
-- Finalize documentation and visualizations  
+- Complete assigned analysis tasks
+- Finalize documentation and visualizations
 - Prepare content for submission
 
 ---
