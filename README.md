@@ -1,31 +1,33 @@
-# 📦 The Express: A Collaborative Data Science Project on U.S. Retail Supply Chain Delays
+# 📦 Welcome to The Express: A Collaborative Data Science Project on U.S. Retail Supply Chain Delays
 
 ![Your package is out for delivery meme](./4_data_analysis/images/delivery%20meme.jpg)
 
-**The Express** is a collaborative data science initiative developed to investigate the persistent issue of delivery delays in the U.S. retail supply chain. Combining real-world logistics data from Southern California and a systems thinking approach, this project aims to uncover the complex interdependencies among operational, environmental, and behavioral factors that contribute to delivery disruptions. Our analysis informs strategies to mitigate such delays and improve retail supply chain performance.
+Welcome to **The Express**, a collaborative data science initiative developed to investigate the persistent issue of delivery delays in the U.S. retail supply chain. Combining real-world logistics data from Southern California and a systems thinking approach, this project aims to uncover the complex interdependencies among operational, environmental, and behavioral factors that contribute to delivery disruptions. Our analysis informs strategies to mitigate such delays and improve retail supply chain performance.
 
 ---
 
 ## 📘 Table of Contents
 
-1. [Project Overview](#project-overview)  
-2. [Problem Statement](#problem-statement)  
-3. [Research Questions](#research-questions)  
-4. [Dataset and Preparation](#dataset-and-preparation)  
-5. [Exploratory Analysis and Methodology](#exploratory-analysis-and-methodology)  
-6. [Findings](#findings)  
-7. [Limitations and Future Work](#limitations-and-future-work)  
-8. [Project Milestones](#project-milestones)  
-9. [Tech Stack](#tech-stack)  
-10. [Repository Structure](#repository-structure)  
-11. [Setup and Usage](#setup-and-usage)  
-12. [Team and Collaboration](#team-and-collaboration)  
-13. [License](#license)  
-14. [Acknowledgments](#acknowledgments)
+- [Project Overview](#project-overview)  
+- [Problem Statement](#problem-statement)  
+- [Research Questions](#research-questions)  
+- [Dataset and Preparation](#dataset-and-preparation)  
+- [Exploratory Analysis and Methodology](#exploratory-analysis-and-methodology)  
+- [Findings](#findings)  
+- [Limitations and Future Work](#limitations-and-future-work)  
+- [Project Milestones](#project-milestones)  
+- [Tech Stack](#tech-stack)  
+- [Repository Structure](#repository-structure)  
+- [Setup and Usage](#setup-and-usage)  
+- [Team and Collaboration](#team-and-collaboration)  
+- [License](#license)  
+- [Acknowledgments](#acknowledgments)
+
 
 ---
 
 ## 🧭 Project Overview
+
 Supply chain reliability has become critical for competitive success in retail, with rising consumer expectations for fast and reliable delivery. However, U.S. retailers continue to face delivery delays, especially during peak seasons or in metropolitan areas. Despite technological advancements such as real-time tracking and predictive routing, these delays persist. The Express investigates these inefficiencies through statistical and systems-based analysis to identify root causes and develop actionable insights.
 
 ---
@@ -71,7 +73,7 @@ We used a dataset titled *Southern California Supply Chain Logistics Data* from 
 
 ---
 
-## 📊 Exploratory Analysis and Methodology
+## 📊 Data Analysis and Methodology
 
 ### Phase I: Raw Dataset
 
@@ -95,15 +97,15 @@ After re-aligning variable definitions with documented expectations (e.g., binar
 - Port congestion repeatedly emerged as the most consistently relevant variable across models.  
 - Compound risk factors (e.g., bad weather + driver fatigue or customs delays + low equipment availability) were more predictive of delivery time deviation than any single factor.  
 - Heatmaps and multi-dimensional plots offered clearer insights than raw correlation.  
-- These findings align with theories of cascading disruptions and ripple effects described in global supply chain literature (e.g., Jusda, IMF, MIT SCM).  
+- These findings align with theories of cascading disruptions and ripple effects described in global supply chain literature.
+
+> The strongest relationship we found was only 0.0118 between port congestion and delivery time deviation—extremely close to zero.
 
 ![Figure I: Three techniques outcome](./4_data_analysis/images/figure_3.png)
 
-*Figure III: A heatmap that illustrates how traffic congestion and port delays interact to worsen delivery deviations.*
+*Figure I: A heatmap that illustrates the correlation between the independent variables and the dependent.*
 
 ![Heatmap](./4_data_analysis/images/figure_5.jpeg)
-
-*"Your package is out for delivery. Me: the entire day..." — because data can’t fix impatience, but at least now we know why it’s late.*
 
 ---
 
@@ -138,14 +140,14 @@ After re-aligning variable definitions with documented expectations (e.g., binar
 
 ## 🧰 Tech Stack
 
-- **Python**: pandas, numpy, seaborn, matplotlib  
+- **Python**: `pandas`, `numpy`, `seaborn`, `matplotlib`  
 - **Jupyter Notebooks**: for exploration, cleaning, and correlation analysis  
 - **Tableau**: for dashboards and stakeholder visualizations  
 - **Git + GitHub**: for collaboration, version control, and project coordination  
 
 ---
 
-## 🗂️ Repository Structure
+## 📂 Repository Structure
 
 ```plaintext
 The-Express/
@@ -160,21 +162,58 @@ The-Express/
 ├── notes/
 ├── requirements.txt
 └── README.md
+```
 
 ## ⚙️ Setup and Usage
 
+To run this project locally:
+
+```bash
+# Clone the repository
 git clone https://github.com/MIT-Emerging-Talent/ET6-CDSP-group-22-repo.git
 cd ET6-CDSP-group-22-repo
 
+# Create and activate a virtual environment
 python -m venv venv
-source venv/bin/activate  # or venv\\Scripts\\activate on Windows
+source venv/bin/activate       # On macOS/Linux
+# OR
+venv\Scripts\activate          # On Windows
 
+# Install dependencies
 pip install -r requirements.txt
+
+# Launch Jupyter Notebook
 jupyter notebook
+```
+
+## 👥 Proejct Team Members
+
+This project was built by a global team of passionate learners as part of the **MIT Emerging Talent Program**.
+
+- [Jawid Mohseni](https://github.com/JawidMohseni)  
+- [Razan Ibrahim](https://github.com/Razan-O-Elobeid)  
+- [Ismatova Rumiya](https://github.com/Ismatova-Rumiya)  
+- [Alemayehu Desta](https://github.com/Alemayehu-Desta)  
+- [Omnia Shawir](https://github.com/omniaNS)
+
+---
+
+## 📜 License
+
+This project is licensed under the **MIT License**.  
+See the [LICENSE](./LICENSE) file for full details.
+
+---
+
+## 🙏 Acknowledgments
+
+We extend our sincere gratitude to the **MIT Emerging Talent Program** for providing the structure, mentorship, and global platform that made this collaboration possible.
+
+Special thanks to:
+- The instructors and mentors who guided us at every stage
+- The open-source data community for making rich datasets publicly available
+
+This project stands as a testament to cross-cultural teamwork, data-driven thinking, and the power of collective learning.
 
 
-License
-This project is licensed under the MIT License. See the LICENSE file for details.
 
-🙏 Acknowledgments
-We extend our thanks to the MIT Emerging Talent Program for their mentorship, structure, and support. We also recognize the value of open-source platforms like Kaggle, GitHub, and the Python data community in enabling this project.
