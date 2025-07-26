@@ -1,6 +1,6 @@
 # 📦 The Express: A Collaborative Data Science Project on U.S. Retail Supply Chain Delays
 
-![Your package is out for delivery meme](./4_data_analysis/images/meme_waiting_for_delivery.png)
+![Your package is out for delivery meme](./4_data_analysis/images/delivery%20meme.jpg)
 
 **The Express** is a collaborative data science initiative developed to investigate the persistent issue of delivery delays in the U.S. retail supply chain. Combining real-world logistics data from Southern California and a systems thinking approach, this project aims to uncover the complex interdependencies among operational, environmental, and behavioral factors that contribute to delivery disruptions. Our analysis informs strategies to mitigate such delays and improve retail supply chain performance.
 
@@ -26,8 +26,7 @@
 ---
 
 ## 🧭 Project Overview
-
-With rising consumer expectations for fast and reliable delivery, supply chain reliability has become critical for competitive success in retail. However, U.S. retailers continue to face delivery delays, especially during peak seasons or in metropolitan areas. Despite technological advancements such as real-time tracking and predictive routing, these delays persist. The Express investigates these inefficiencies through statistical and systems-based analysis to identify root causes and develop actionable insights.
+Supply chain reliability has become critical for competitive success in retail, with rising consumer expectations for fast and reliable delivery. However, U.S. retailers continue to face delivery delays, especially during peak seasons or in metropolitan areas. Despite technological advancements such as real-time tracking and predictive routing, these delays persist. The Express investigates these inefficiencies through statistical and systems-based analysis to identify root causes and develop actionable insights.
 
 ---
 
@@ -50,7 +49,7 @@ The retail supply chain in the United States is experiencing increasingly comple
 
 ---
 
-## 🧮 Dataset and Preparation
+## 🧮 Data Modelling and Preparation 
 
 We used a dataset titled *Southern California Supply Chain Logistics Data* from Kaggle. It includes 32,066 records and 26 variables collected hourly between 2021 and 2024. The dataset represents operational data across multiple modes of transport (trucks, rail, drones), enriched with GPS, sensor, and warehouse data.
 
@@ -98,11 +97,11 @@ After re-aligning variable definitions with documented expectations (e.g., binar
 - Heatmaps and multi-dimensional plots offered clearer insights than raw correlation.  
 - These findings align with theories of cascading disruptions and ripple effects described in global supply chain literature (e.g., Jusda, IMF, MIT SCM).  
 
-![Figure III: Interaction Heatmap of Top Risk Factors](./4_data_analysis/images/figure3_interaction_heatmap.png)
+![Figure I: Three techniques outcome](./4_data_analysis/images/figure_3.png)
 
 *Figure III: A heatmap that illustrates how traffic congestion and port delays interact to worsen delivery deviations.*
 
-![Your package is out for delivery meme](./4_data_analysis/images/meme_waiting_for_delivery.png)
+![Heatmap](./4_data_analysis/images/figure_5.jpeg)
 
 *"Your package is out for delivery. Me: the entire day..." — because data can’t fix impatience, but at least now we know why it’s late.*
 
@@ -172,6 +171,7 @@ source venv/bin/activate  # or venv\\Scripts\\activate on Windows
 
 pip install -r requirements.txt
 jupyter notebook
+
 
 License
 This project is licensed under the MIT License. See the LICENSE file for details.
