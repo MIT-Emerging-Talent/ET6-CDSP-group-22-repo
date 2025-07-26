@@ -47,14 +47,18 @@ ______________________________________________________________________
 
 ## Project Milestones
 
-| Milestone | Description |
-|----------|-------------|
-| **0 - Cross-Cultural Collaboration** | Formed a team and established shared norms, values, and tools using GitHub and structured documentation. |
-| **1 - Problem Identification** | Scoped our research domain through literature review, data discovery, and systems thinking. |
-| **2 - Data Collection** | Selected, cleaned, and documented a comprehensive dataset on Southern California logistics operations. |
-| **3 - Data Analysis** | Conducted EDA, correlation analysis, and interaction modeling. |
-| **4 - Communicating Results** | Designed visuals and messaging tailored to supply chain stakeholders. |
-| **5 - Final Presentation** | Shared findings with MIT Emerging Talent faculty, peers, and partners. |
+| Milestone                         | Description                                                                 |
+|----------------------------------|-----------------------------------------------------------------------------|
+| **0 - Cross-Cultural Collaboration** | Formed a team and established shared norms, values, and tools using        |
+|                                  | GitHub and structured documentation.                                       |
+| **1 - Problem Identification**   | Scoped our research domain through literature review, data discovery, and  |
+|                                  | systems thinking.                                                          |
+| **2 - Data Collection**          | Selected, cleaned, and documented a comprehensive dataset on Southern      |
+|                                  | California logistics operations.                                           |
+| **3 - Data Analysis**            | Conducted EDA, correlation analysis, and interaction modeling.             |
+| **4 - Communicating Results**    | Designed visuals and messaging tailored to supply chain stakeholders.      |
+| **5 - Final Presentation**       | Shared findings with MIT Emerging Talent faculty, peers, and partners.     |
+
 
 ______________________________________________________________________
 
@@ -80,10 +84,13 @@ be mitigated using data science?
 
 ### Supporting Questions
 
+- How do anomalies like extreme weather or pandemics affect  
+  delivery reliability in urban retail supply chains?
+- Which combinations of transportation, environmental, and logistics features  
+  are most predictive of high-risk deliveries?
 - What impact do traffic congestion, port conditions, warehouse performance,
   and environmental factors have on delivery timing?
-- Can we predict delivery delays based on real-time logistics and sensor data?
-- How do seasonal surges and disruptive events affect last-mile delivery?
+- How do seasonal surges and disruptive events affect supply chain delivery?
 - Which features have the most significant influence when considered together?
 
 ______________________________________________________________________
@@ -120,9 +127,9 @@ ______________________________________________________________________
 
 ### Phase I: Raw Dataset
 
-We used Pearson, Spearman, and Kendall Tau correlation metrics to analyze
-relationships between 16 features and 3 delay indicators. All individual
-correlations were weak.
+We used the dataset in its original form, applying Pearson, Spearman, and Kendall  
+Tau correlation metrics to analyze relationships between 16 features and 3 delay  
+indicators. All individual correlations were found to be weak.
 
 ### Phase II: Corrected Dataset
 
