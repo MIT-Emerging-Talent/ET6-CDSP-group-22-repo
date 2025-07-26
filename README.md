@@ -1,4 +1,4 @@
-# 👋 Welcome to *The Express*
+# 👋📦 Welcome to *The Express*
 
 ## Understanding Retail Supply Chain Delays: Collaborative Data Science Project
 
@@ -46,19 +46,20 @@ root causes and develop actionable insights.
 ______________________________________________________________________
 
 ## Project Milestones
-
-| Milestone                         | Description                                                             |
-|----------------------------------|--------------------------------------------------------------------------|
-| **0 - Cross-Cultural Collaboration** | Formed a team and established shared norms, values, and tools using  |
-|                                  | GitHub and structured documentation.                                     |
-| **1 - Problem Identification**   | Scoped our research domain through literature review, data discovery,    |
-|                                  | and systems thinking.                                                    |
-| **2 - Data Collection**          | Selected, cleaned, and documented a comprehensive dataset on Southern    |
-|                                  | California logistics operations.                                         |
-| **3 - Data Analysis**            | Conducted EDA, correlation analysis, and interaction modeling.           |
-| **4 - Communicating Results**    | Designed visuals and messaging tailored to supply chain stakeholders.    |
-| **5 - Final Presentation**       | Shared findings with MIT Emerging Talent faculty, peers, and partners.   |
-
+| Milestone                         | Description                                                              |
+|----------------------------------|---------------------------------------------------------------------------|
+| **0 - Cross-Cultural Collaboration** | Formed a team and established shared norms, values, and tools         |
+|                                  | using GitHub and structured                                              |
+|                                  | documentation.                                                           |
+| **1 - Problem Identification**   | Scoped our research domain through literature review, data              |
+|                                  | discovery, and systems thinking.                                        |
+| **2 - Data Collection**          | Selected, cleaned, and documented a comprehensive dataset on            |
+|                                  | Southern California logistics operations.                               |
+| **3 - Data Analysis**            | Conducted EDA, correlation analysis, and interaction modeling.          |
+| **4 - Communicating Results**    | Designed visuals and messaging tailored to supply chain                 |
+|                                  | stakeholders.                                                           |
+| **5 - Final Presentation**       | Shared findings with MIT Emerging Talent faculty, peers, and            |
+|                                  | partners.                                                               |
 ______________________________________________________________________
 
 ## Problem Statement
