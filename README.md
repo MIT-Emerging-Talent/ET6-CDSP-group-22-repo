@@ -47,18 +47,17 @@ ______________________________________________________________________
 
 ## Project Milestones
 
-| Milestone                         | Description                                                                 |
-|----------------------------------|-----------------------------------------------------------------------------|
-| **0 - Cross-Cultural Collaboration** | Formed a team and established shared norms, values, and tools using        |
-|                                  | GitHub and structured documentation.                                       |
-| **1 - Problem Identification**   | Scoped our research domain through literature review, data discovery, and  |
-|                                  | systems thinking.                                                          |
-| **2 - Data Collection**          | Selected, cleaned, and documented a comprehensive dataset on Southern      |
-|                                  | California logistics operations.                                           |
-| **3 - Data Analysis**            | Conducted EDA, correlation analysis, and interaction modeling.             |
-| **4 - Communicating Results**    | Designed visuals and messaging tailored to supply chain stakeholders.      |
-| **5 - Final Presentation**       | Shared findings with MIT Emerging Talent faculty, peers, and partners.     |
-
+| Milestone                         | Description                                                             |
+|----------------------------------|--------------------------------------------------------------------------|
+| **0 - Cross-Cultural Collaboration** | Formed a team and established shared norms, values, and tools using  |
+|                                  | GitHub and structured documentation.                                     |
+| **1 - Problem Identification**   | Scoped our research domain through literature review, data discovery,    |
+|                                  | and systems thinking.                                                    |
+| **2 - Data Collection**          | Selected, cleaned, and documented a comprehensive dataset on Southern    |
+|                                  | California logistics operations.                                         |
+| **3 - Data Analysis**            | Conducted EDA, correlation analysis, and interaction modeling.           |
+| **4 - Communicating Results**    | Designed visuals and messaging tailored to supply chain stakeholders.    |
+| **5 - Final Presentation**       | Shared findings with MIT Emerging Talent faculty, peers, and partners.   |
 
 ______________________________________________________________________
 
@@ -127,9 +126,9 @@ ______________________________________________________________________
 
 ### Phase I: Raw Dataset
 
-We used the dataset in its original form, applying Pearson, Spearman, and Kendall  
-Tau correlation metrics to analyze relationships between 16 features and 3 delay  
-indicators. All individual correlations were found to be weak.
+We used the dataset in its original form, applying Pearson, Spearman, and  
+Kendall Tau correlation metrics to analyze relationships between 16 features  
+and 3 delay indicators.
 
 ### Phase II: Corrected Dataset
 
