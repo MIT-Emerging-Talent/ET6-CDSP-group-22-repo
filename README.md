@@ -1,22 +1,25 @@
 # 📦 The Express: A Collaborative Data Science Project on U.S. Retail Supply Chain Delays
 
-**The Express** is a collaborative data science project focused on identifying the root causes of delivery delays in the U.S. retail supply chain. Using a systems thinking lens and real-world logistics data from Southern California, we explore how multiple operational and environmental factors interact to cause disruptions—and what can be done to prevent them.
+![Your package is out for delivery meme](./4_data_analysis/images/meme_waiting_for_delivery.png)
+
+**The Express** is a collaborative data science initiative developed to investigate the persistent issue of delivery delays in the U.S. retail supply chain. Combining real-world logistics data from Southern California and a systems thinking approach, this project aims to uncover the complex interdependencies among operational, environmental, and behavioral factors that contribute to delivery disruptions. Our analysis informs strategies to mitigate such delays and improve retail supply chain performance.
 
 ---
 
 ## 📘 Table of Contents
+
 1. [Project Overview](#project-overview)  
 2. [Problem Statement](#problem-statement)  
 3. [Research Questions](#research-questions)  
-4. [Dataset & Preparation](#dataset--preparation)  
-5. [Exploratory Analysis & Methodology](#exploratory-analysis--methodology)  
+4. [Dataset and Preparation](#dataset-and-preparation)  
+5. [Exploratory Analysis and Methodology](#exploratory-analysis-and-methodology)  
 6. [Findings](#findings)  
-7. [Limitations & Future Work](#limitations--future-work)  
+7. [Limitations and Future Work](#limitations-and-future-work)  
 8. [Project Milestones](#project-milestones)  
 9. [Tech Stack](#tech-stack)  
 10. [Repository Structure](#repository-structure)  
-11. [Setup & Usage](#setup--usage)  
-12. [Team & Collaboration](#team--collaboration)  
+11. [Setup and Usage](#setup-and-usage)  
+12. [Team and Collaboration](#team-and-collaboration)  
 13. [License](#license)  
 14. [Acknowledgments](#acknowledgments)
 
@@ -24,98 +27,100 @@
 
 ## 🧭 Project Overview
 
-In an increasingly digital and fast-paced economy, delivery reliability is no longer a luxury—it’s a consumer expectation. Yet delays remain widespread, especially during peak seasons or in high-traffic urban areas. Our project uses data science techniques to analyze these challenges, identify patterns, and propose mitigation strategies through correlation analysis and interaction-based reasoning.
+With rising consumer expectations for fast and reliable delivery, supply chain reliability has become critical for competitive success in retail. However, U.S. retailers continue to face delivery delays, especially during peak seasons or in metropolitan areas. Despite technological advancements such as real-time tracking and predictive routing, these delays persist. The Express investigates these inefficiencies through statistical and systems-based analysis to identify root causes and develop actionable insights.
 
 ---
 
 ## 📌 Problem Statement
 
-The U.S. retail supply chain suffers from widespread delivery delays, despite technological advances. These delays cost businesses money, hurt customer satisfaction, and reveal a fragile and poorly coordinated logistics system. Our goal is to identify the key causes of these delays and determine how predictive and descriptive analytics can support operational decision-making.
-
-We focused on Southern California due to its complex logistics network, port activity, and high-volume retail delivery activity.
+The retail supply chain in the United States is experiencing increasingly complex and systemic delays, causing ripple effects across customer satisfaction, business revenue, and national logistics capacity. Our project centers on the Southern California region—a logistics hub with high volumes of freight movement via truck, rail, and sea. Through a data-driven approach, we aim to answer why delivery delays continue despite modernization and how data science can guide interventions.
 
 ---
 
 ## 🎯 Research Questions
 
-**Main Research Question:**
-- What are the key factors contributing to delivery delays in the retail supply chain, and how can they be mitigated using data-driven methods?
+**Primary Research Question:**
+- What are the key operational, environmental, and behavioral factors that contribute to delivery delays in the U.S. retail supply chain, and how can they be mitigated using data science?
 
 **Supporting Questions:**
-- How do congestion, weather, or warehouse conditions influence delays?
-- Can we predict delays using machine learning or statistical tools?
-- How do events like holidays or extreme weather impact last-mile delivery?
-- Are some risk factors more dangerous in combination than alone?
+- What impact do traffic congestion, port conditions, warehouse performance, and environmental factors have on delivery timing?
+- Can we predict delivery delays based on real-time logistics and sensor data?
+- How do seasonal surges and disruptive events (e.g., winter storms, labor strikes) affect last-mile delivery?
+- Which features have the most significant influence when considered together?
 
 ---
 
-## 🧮 Dataset & Preparation
+## 🧮 Dataset and Preparation
 
-**Source**: Kaggle – Southern California Logistics Dataset (2021–2024)  
-**Rows**: 32,066  
-**Columns**: 26  
-**Scope**: Trucks, rail, drones; GPS logs, IoT sensors, warehouse data
+We used a dataset titled *Southern California Supply Chain Logistics Data* from Kaggle. It includes 32,066 records and 26 variables collected hourly between 2021 and 2024. The dataset represents operational data across multiple modes of transport (trucks, rail, drones), enriched with GPS, sensor, and warehouse data.
 
-### Data Cleaning Steps
-- Loaded with `pandas`; no source modification
-- Removed irrelevant columns
-- Verified no missing or duplicate records
-- Identified inconsistencies in value ranges vs. documented schema
+### Key Preparation Steps:
+- Loaded and explored using pandas and Jupyter Notebooks
+- Removed duplicate and irrelevant columns
+- Validated column types, formats, and ranges
+- Identified inconsistencies between documented schema and actual values (e.g., order status as floats rather than binary)
 
-### Feature Groups
-- **Logistics**: fuel use, handling time, equipment availability
-- **Environmental**: traffic level, weather severity, port congestion
-- **Operational**: lead time, order fulfillment, customs clearance
+### Key Feature Categories:
+- **Logistics**: Fuel usage, equipment availability, loading time  
+- **Environmental**: Weather severity, port congestion, traffic conditions  
+- **Operational**: Order fulfillment rate, lead time, supplier reliability  
 
-### Target Variables
-- `delivery_time_deviation`: hours early/late
-- `delay_probability`: delay likelihood (0–1)
-- `delay_risk_class`: risk bucket (Low, Moderate, High)
+### Target Variables:
+- `delivery_time_deviation` (hours): Actual vs. estimated delivery time  
+- `delay_probability` (float): Predicted likelihood of delay  
+- `delay_risk_class` (categorical): Low, Moderate, High risk levels  
 
 ---
 
-## 📊 Exploratory Analysis & Methodology
+## 📊 Exploratory Analysis and Methodology
 
 ### Phase I: Raw Dataset
-- Used Pearson, Spearman, and Kendall Tau to identify correlates
-- Found extremely weak correlations (max ~0.01)
+
+We used Pearson, Spearman, and Kendall Tau correlation metrics to analyze relationships between 16 features and 3 delay indicators. All individual correlations were weak—none exceeded 0.012.
 
 ### Phase II: Corrected Dataset
-- Re-coded features based on documentation
-- Performed interaction analysis manually
-- Found that **compound risks** (e.g., weather + port congestion) are more predictive than any single feature
 
-### Additional Analysis
-- Visual heatmaps and interaction plots helped uncover subtle multivariate patterns
-- Decided against machine learning to prioritize interpretability, though ML is proposed for future work
+After re-aligning variable definitions with documented expectations (e.g., binary flags, correct scales), we re-ran the analysis. This revealed stronger patterns through manual interaction analysis.
+
+### Summary:
+
+- Correlation matrices were mostly inconclusive.  
+- Manual interaction analysis (e.g., high traffic + low inventory) showed higher predictive power.  
+- We prioritized interpretability and did not use machine learning in this phase, but recommend ensemble models for future work.  
 
 ---
 
 ## 📈 Findings
 
-- **No strong single predictors** of delay  
-- **Port congestion** was consistently among the top (albeit weak) indicators  
-- **Compounded risks** (e.g., high traffic + low equipment availability) were the strongest contributors to delay  
-- Traditional correlation methods are insufficient alone—interaction analysis is more informative  
-- Literature supports a ripple effect in supply chains (Jusda 2023, IMF 2022, MIT SCM 2023)
+- No single variable strongly correlates with delivery delay.  
+- Port congestion repeatedly emerged as the most consistently relevant variable across models.  
+- Compound risk factors (e.g., bad weather + driver fatigue or customs delays + low equipment availability) were more predictive of delivery time deviation than any single factor.  
+- Heatmaps and multi-dimensional plots offered clearer insights than raw correlation.  
+- These findings align with theories of cascading disruptions and ripple effects described in global supply chain literature (e.g., Jusda, IMF, MIT SCM).  
 
 ![Figure III: Interaction Heatmap of Top Risk Factors](./4_data_analysis/images/figure3_interaction_heatmap.png)
 
-*Figure III: A visual representation of how compound factors (e.g., high port congestion + low inventory) lead to greater delivery time deviations.*
+*Figure III: A heatmap that illustrates how traffic congestion and port delays interact to worsen delivery deviations.*
+
+![Your package is out for delivery meme](./4_data_analysis/images/meme_waiting_for_delivery.png)
+
+*"Your package is out for delivery. Me: the entire day..." — because data can’t fix impatience, but at least now we know why it’s late.*
 
 ---
 
-## ⚠️ Limitations & Future Work
+## ⚠️ Limitations and Future Work
 
-- Data is cross-sectional—not time-series
-- Some sensors recorded implausible values (e.g., –10°C in California)
-- No product-type differentiation (perishable vs. non-perishable)
-- Missing high-impact disruption records (e.g., labor strikes, natural disasters)
+### Known Limitations:
+- No temporal modeling—data is cross-sectional and cannot track evolving conditions  
+- Sensor data contains inconsistencies (e.g., negative temperatures in Southern California)  
+- No product categorization—treats perishable and durable goods equally  
+- Lacks representation of rare but critical disruptions (e.g., strikes, earthquakes)  
 
-**Next Steps**:
-- Use machine learning (e.g., XGBoost + SHAP) for deeper pattern detection
-- Incorporate time-series and geospatial context
-- Build risk dashboards for supply chain managers
+### Future Work:
+- Apply machine learning models (e.g., XGBoost, SHAP) to automatically detect nonlinear interactions  
+- Incorporate time-series modeling and regional identifiers  
+- Integrate external datasets on labor disruptions, weather anomalies, and economic policy shocks  
+- Build a real-time risk dashboard for supply chain managers  
 
 ---
 
@@ -123,21 +128,21 @@ We focused on Southern California due to its complex logistics network, port act
 
 | Milestone | Description |
 |----------|-------------|
-| **0 - Cross-Cultural Collaboration** | Established norms, set up GitHub, and coordinated across diverse backgrounds. |
-| **1 - Problem Identification** | Researched domain and scoped our problem within retail logistics. |
-| **2 - Data Collection** | Selected and cleaned Southern California logistics data. |
-| **3 - Data Analysis** | Ran statistical and interaction-based analyses. |
-| **4 - Communicating Results** | Created visualizations and translated findings for stakeholders. |
-| **5 - Final Presentation** | Presented insights to MIT Emerging Talent cohort and partners. |
+| **0 - Cross-Cultural Collaboration** | Formed a global team and established shared norms, values, and tools using GitHub and structured documentation. |
+| **1 - Problem Identification** | Scoped our research domain through literature review, data discovery, and systems thinking. |
+| **2 - Data Collection** | Selected, cleaned, and documented a comprehensive dataset on Southern California logistics operations. |
+| **3 - Data Analysis** | Conducted EDA, correlation analysis, and interaction modeling. |
+| **4 - Communicating Results** | Designed visuals and messaging tailored to supply chain stakeholders. |
+| **5 - Final Presentation** | Shared findings with MIT Emerging Talent faculty, peers, and partners. |
 
 ---
 
 ## 🧰 Tech Stack
 
-- **Python**: `pandas`, `numpy`, `matplotlib`, `seaborn`
-- **Jupyter Notebooks**: for EDA and modeling
-- **Tableau**: for stakeholder dashboards
-- **GitHub**: for version control and collaboration
+- **Python**: pandas, numpy, seaborn, matplotlib  
+- **Jupyter Notebooks**: for exploration, cleaning, and correlation analysis  
+- **Tableau**: for dashboards and stakeholder visualizations  
+- **Git + GitHub**: for collaboration, version control, and project coordination  
 
 ---
 
@@ -145,90 +150,31 @@ We focused on Southern California due to its complex logistics network, port act
 
 ```plaintext
 The-Express/
-├── 0_domain_study/                 # Background research and brainstorming
-│   ├── README.md
-│   ├── brainstorming.md
-│   └── guide.md
-│
-├── 1_datasets/                     # Raw, cleaned, and unused datasets
-│   ├── cleaned_and_processed_data/
-│   ├── raw_data/
-│   ├── unused_data_set_1/
-│   ├── README.md
-│   └── guide.md
-│
-├── 2_data_preparation/            # Data loading and cleaning scripts
-│   ├── clean_dataset.py
-│   ├── README.md
-│   └── guide.md
-│
-├── 3_data_exploration/            # EDA notebooks and summaries
-│   ├── eda_supply_chain.ipynb
-│   ├── README.md
-│   └── guide.md
-│
-├── 4_data_analysis/               # Modeling and correlation summaries
-│   ├── images/
-│   ├── notebooks/
-│   ├── summary_of_analysis_of_cdsp.md
-│   ├── README.md
-│   └── guide.md
-│
-├── 5_communication_strategy/      # Messaging, storytelling, stakeholder focus
-│   ├── README.md
-│   └── guide.md
-│
-├── 6_final_presentation/          # Public-facing presentation files
-│   ├── README.md
-│   └── guide.md
-│
-├── collaboration/                 # Team norms and retrospective notes
-│   ├── guide/
-│   ├── retrospectives/
-│   ├── communication.md
-│   ├── constraints.md
-│   ├── learning_goals.md
-│   └── README.md
-│
-├── notes/                         # Miscellaneous team notes
-│   └── README.md
-│
-├── requirements.txt               # Python dependencies
-└── README.md                      # Main documentation
-⚙️ Setup & Usage
-Clone the repository:
+├── 0_domain_study/
+├── 1_datasets/
+├── 2_data_preparation/
+├── 3_data_exploration/
+├── 4_data_analysis/
+├── 5_communication_strategy/
+├── 6_final_presentation/
+├── collaboration/
+├── notes/
+├── requirements.txt
+└── README.md
 
-bash
-Copy
-Edit
-git clone https://github.com/YOUR_ORG/The-Express.git
-cd The-Express
-Create and activate a virtual environment:
+## ⚙️ Setup and Usage
 
-bash
-Copy
-Edit
+git clone https://github.com/MIT-Emerging-Talent/ET6-CDSP-group-22-repo.git
+cd ET6-CDSP-group-22-repo
+
 python -m venv venv
-source venv/bin/activate        # On Windows: venv\Scripts\activate
+source venv/bin/activate  # or venv\\Scripts\\activate on Windows
+
 pip install -r requirements.txt
-Launch notebooks:
-
-bash
-Copy
-Edit
 jupyter notebook
-👥 Team & Collaboration
-Name	GitHub
-Jawid Mohseni	@JawidMohseni
-Razan Ibrahim	@Razan-O-Elobeid
-Rumiya	@Ismatova-Rumiya
-Alemayehu Desta	@Alemayehu-Desta
-Omnia	@omniaNS
 
-See collaboration/ for team norms and retrospective documentation.
-
-📄 License
-This project is licensed under the MIT License. See LICENSE for full terms.
+License
+This project is licensed under the MIT License. See the LICENSE file for details.
 
 🙏 Acknowledgments
-We thank the MIT Emerging Talent Program, our mentors, and supply chain stakeholders for their guidance. Special thanks to open-source communities and platforms like Kaggle for making impactful data accessible.
+We extend our thanks to the MIT Emerging Talent Program for their mentorship, structure, and support. We also recognize the value of open-source platforms like Kaggle, GitHub, and the Python data community in enabling this project.
