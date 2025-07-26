@@ -151,7 +151,7 @@ analysis.
 
 ![Figure I: Correlation Heatmap](./4_data_analysis/images/figure_3.png)
 
-*Figure I: A heatmap showing correlation between key features and delivery time.*
+*Figure I: A heatmap showing the correlation between key features and delivery time.*
 
 ![Heatmap](./4_data_analysis/images/figure_5.jpeg)
 
