@@ -1,265 +1,234 @@
-# 👋 Welcome to *The Express*
+# 📦 The Express: A Collaborative Data Science Project on U.S. Retail Supply Chain Delays
 
-Welcome to **The Express** – our Collaborative Data Science Project!
-
-## 📊 Analyzing and Investigating Supply Chain Delays: A Data-Driven Approach
-
-Together, we’ll explore and analyze the root causes of delivery delays in the
-U.S. retail supply chain using a systems thinking approach and data-driven
-techniques. This project is a great opportunity to collaborate, learn, and
-generate impactful solutions.
-
-## 👥 Team Members with this Project  
-
-- [Jawid Mohseni](https://github.com/JawidMohseni)  
-- [Razan Ibrahim](https://github.com/Razan-O-Elobeid)  
-- [Rumiya](https://github.com/Ismatova-Rumiya)  
-- [Alemayehu Desta](https://github.com/Alemayehu-Desta)  
-- [Omnia](https://github.com/omniaNS)
-
-### 🤝 Collaboration Framework
-
-- 📋 [Our Group Norms](collaboration/README.md)
-- 🎯 [Learning Goals](collaboration/learning_goals.md)
-- 💬 [Communication](collaboration/communication.md)
-- 🚧 [Constraints](collaboration/constraints.md)
-- 🔍 [Retrospective](collaboration/retrospective.md)
-
-### 🧩 Problem Statement
-
-Despite being one of the world’s most developed economies, the United States
-continues to face nationwide retail supply chain delays, affecting both large
-chains and small-to-mid-sized businesses. These disruptions are especially
-severe during peak periods like holidays, back-to-school seasons, and major
-promotional events, resulting in stockouts, delivery delays, and lost customer
-trust.
-A 2021 report by [the National Retail Federation](https://nrf.com/media-center/press-releases/nrf-calls-white-house-address-port-congestion-challenges)
-revealed that 97% of U.S.
-retailers experienced shipping or port delays, [with 70% reporting delays of two
-to three weeks](https://splash247.com/biden-pressured-to-fix-us-port-congestion-issues/).
-Additionally, [the U.S. is
-short over 78,000 truck drivers in
-late 2022](https://www.trucknews.com/human-resources/u-s-is-short-78000-drivers-ata-says/1003170001/),
-contributing to late
-deliveries and increased freight costs. Lead
-times for replenishment and raw materials have increased by up to 30 to 40
-days, while [65% of grocery and retail merchants lack real-time supply chain
-data](https://www.pymnts.com/news/retail/2025/65percent-of-grocery-retailers-lack-real-time-supply-chain-data/),
-this reduces
-their ability to respond dynamically to disruptions.
-These delays are not confined to specific geographies—they affect retail
-operations nationwide, from large coastal distribution hubs to inner-city
-stores. As a result, businesses struggle to maintain inventory balance, meet
-demand, and compete with more digitally advanced competitors like Amazon, which
-leverage predictive analytics and automation.
-This growing gap between the current state of retail supply chain operations
-and the desired state of responsive, tech-enabled systems highlights the urgent
-need for scalable solutions. Addressing this issue is critical to improving
-customer satisfaction, reducing operational costs, and preserving the
-competitiveness of the U.S. retail sector.
+**The Express** is a collaborative data science project focused on identifying the root causes of delivery delays in the U.S. retail supply chain. Using a systems thinking lens and real-world logistics data from Southern California, we explore how multiple operational and environmental factors interact to cause disruptions—and what can be done to prevent them.
 
 ---
 
-## 📌 Research Questions
-
-### 🎯 Actionable Research Question
-
-- **What are the key factors that contribute to delivery delays in the retail
-  supply chain, and how can they be mitigated?**
-
----
-
-### 🧠 Supporting Questions
-
-- What transportation and environmental factors most significantly contribute to
-  delivery delays in the U.S. retail supply chain, and how accurately can machine
-  learning models predict these delays?
-
-- How do environmental and event-based anomalies (e.g., weather, COVID) affect
-  last-mile delivery delays in urban retail supply chains, and how accurately can
-  machine learning models predict these delays in the U.S.?
-
-- What are the major transportation and logistics-related causes of delivery
-  delays in the U.S. retail supply chain, and how can predictive models help
-  identify high-risk deliveries?
-
-- How can machine learning be used to predict and reduce delivery delays in the
-  U.S. retail supply chain based on traffic, weather, and logistics data?
-
-- How can machine learning models improve the accuracy of demand forecasting in
-  retail supply chains during seasonal fluctuations?
+## 📘 Table of Contents
+1. [Project Overview](#project-overview)  
+2. [Problem Statement](#problem-statement)  
+3. [Research Questions](#research-questions)  
+4. [Dataset & Preparation](#dataset--preparation)  
+5. [Exploratory Analysis & Methodology](#exploratory-analysis--methodology)  
+6. [Findings](#findings)  
+7. [Limitations & Future Work](#limitations--future-work)  
+8. [Project Milestones](#project-milestones)  
+9. [Tech Stack](#tech-stack)  
+10. [Repository Structure](#repository-structure)  
+11. [Setup & Usage](#setup--usage)  
+12. [Team & Collaboration](#team--collaboration)  
+13. [License](#license)  
+14. [Acknowledgments](#acknowledgments)
 
 ---
 
-### 🧠 Systems Thinking Approach
+## 🧭 Project Overview
 
-#### 🕸 Understanding Delivery Delays in the U.S. Retail Supply Chain
-
-We understand that delivery delays in the U.S. retail supply chain is the
-outcome of multiple interdependent systems. Using systems thinking, we analyzed
-how infrastructure, labor shortages, environmental variability, consumer
-expectations, and technological limitations interact to produce a recurring
-pattern of delivery disruptions. From this lens, our team’s approach is to
-understand the leverage points where smarter interventions can improve
-resilience across the system.
+In an increasingly digital and fast-paced economy, delivery reliability is no longer a luxury—it’s a consumer expectation. Yet delays remain widespread, especially during peak seasons or in high-traffic urban areas. Our project uses data science techniques to analyze these challenges, identify patterns, and propose mitigation strategies through correlation analysis and interaction-based reasoning.
 
 ---
 
-### ❄️ The Iceberg Model: Understanding Systemic Delivery Delays
+## 📌 Problem Statement
 
-#### 📍 Event
+The U.S. retail supply chain suffers from widespread delivery delays, despite technological advances. These delays cost businesses money, hurt customer satisfaction, and reveal a fragile and poorly coordinated logistics system. Our goal is to identify the key causes of these delays and determine how predictive and descriptive analytics can support operational decision-making.
 
-The end user experiences a delayed shipment beyond its expected delivery time.
-Consumers, both individuals and businesses, experience missing delivery
-windows, tracking errors, or unfulfilled expectations. But this event is just
-the tip of the iceberg, in which the end user has minimal capability to
-understand.
-
-#### 📈 Patterns & Trends
-
-Delays spike during holidays, in congested cities, or under severe weather
-conditions.
-These patterns are not random. We consistently observe delays in:
-
-- Urban centers like Los Angeles and NYC (traffic congestion, density)
-- Winter-prone areas like Chicago (weather disruptions)
-- Seasonal surges (Black Friday, Christmas)
-- During national labor shortages or strikes
-
-#### 🏗️ Systemic Structures
-
-**Why do these delays persist despite tech and logistics innovation?**
-
-Underlying structures create the conditions for recurring delays:
-
-- Outdated or underfunded transportation infrastructure
-- Long-term truck driver shortages (80,000+ unfilled positions, ATA 2023)
-- Fragmented communication between warehouses, carriers, and platforms
-- Uniform delivery guarantees that don’t adjust for local or temporal realities
-- Reactive scheduling and lack of data-driven optimization
-- Fatigued labor, minimal buffer time, and rigid delivery windows
-
-These structural flaws create bottlenecks and friction points that increase
-system stress during peak demand.
-
-#### 💭 Mental Models
-
-**What beliefs sustain these fragile systems?**
-
-- The belief that faster is always better encourages unrealistic promises and
-over-optimistic routing.
-- Automation will fix everything, ignoring socio-environmental realities like
-human fatigue and weather patterns.
-- When an entity believes delays are external, not internal, it shifts the
-blame to weather or drivers, rather than poor planning or systemic
-inflexibility.
-- The concept that the customer is always right pressures the system into
-overpromising and overextending.
-
-These mental models limit innovation, reduce flexibility, and intensify
-systemic fragility.
-
-![Delivery Delays in the U.S. Retail Supply Chain][def]
+We focused on Southern California due to its complex logistics network, port activity, and high-volume retail delivery activity.
 
 ---
 
-*For more information, see the [`0_domain_study`](./0_domain_study) folder.*
+## 🎯 Research Questions
 
-🛠️ *By addressing both the visible symptoms and underlying systems, our team
-aims to develop meaningful, data-driven solutions to reduce delivery delays and
-improve the efficiency of retail supply chains.*
+**Main Research Question:**
+- What are the key factors contributing to delivery delays in the retail supply chain, and how can they be mitigated using data-driven methods?
 
-[def]: image1.png
+**Supporting Questions:**
+- How do congestion, weather, or warehouse conditions influence delays?
+- Can we predict delays using machine learning or statistical tools?
+- How do events like holidays or extreme weather impact last-mile delivery?
+- Are some risk factors more dangerous in combination than alone?
 
-## 📦 Data Modeling: Non-technical Explanation
+---
 
-In this project, we explore what causes delivery delays and operational risks in
-a real-world logistics network operating in Southern California. The dataset includes
-hourly data collected between 2021 and 2024 from trucks, rail, and warehouses. These
-records reflect the conditions in which deliveries were made—whether that means
-navigating through traffic, waiting at ports, or responding to equipment shortages.
+## 🧮 Dataset & Preparation
 
-To make sense of the dataset, we grouped the input features (variables) into three
-broad categories:
+**Source**: Kaggle – Southern California Logistics Dataset (2021–2024)  
+**Rows**: 32,066  
+**Columns**: 26  
+**Scope**: Trucks, rail, drones; GPS logs, IoT sensors, warehouse data
 
-- **Logistics Data**:-fuel usage, driver behavior, equipment status, and loading
-  times
-- **Environmental Factors**:-traffic congestion, weather conditions, port delays,
- and cargo condition
-- **Economic & Operational Inputs**:-shipping costs, lead times, customs clearance
-  duration, and supplier reliability
+### Data Cleaning Steps
+- Loaded with `pandas`; no source modification
+- Removed irrelevant columns
+- Verified no missing or duplicate records
+- Identified inconsistencies in value ranges vs. documented schema
 
-**Feature formats:**
+### Feature Groups
+- **Logistics**: fuel use, handling time, equipment availability
+- **Environmental**: traffic level, weather severity, port congestion
+- **Operational**: lead time, order fulfillment, customs clearance
 
-- Binary variables (e.g., cargo status: 0 = bad, 1 = good)
-- Scaled inputs (e.g., traffic levels: 0–10)
-- Continuous measures (e.g., fuel in liters, shipping cost in USD)
+### Target Variables
+- `delivery_time_deviation`: hours early/late
+- `delay_probability`: delay likelihood (0–1)
+- `delay_risk_class`: risk bucket (Low, Moderate, High)
 
-Each row in the dataset is treated as a snapshot in time-representing a delivery
-and the surrounding conditions at that moment.
+---
 
-## 🎯 Target Variables
+## 📊 Exploratory Analysis & Methodology
 
-The goal is to describe what factors cause delivery delay and predict delivery
-risk and delays before they occur. We model this through:
+### Phase I: Raw Dataset
+- Used Pearson, Spearman, and Kendall Tau to identify correlates
+- Found extremely weak correlations (max ~0.01)
 
-- **Delivery Time Deviation**:-how early or late a delivery is (in hours)
-- **Risk Classification**:-Low, Moderate, or High
-- **Delay Probability / Disruption Likelihood**:- values between 0 and 1
+### Phase II: Corrected Dataset
+- Re-coded features based on documentation
+- Performed interaction analysis manually
+- Found that **compound risks** (e.g., weather + port congestion) are more predictive than any single feature
 
-## ✅ Why This Model Works
+### Additional Analysis
+- Visual heatmaps and interaction plots helped uncover subtle multivariate patterns
+- Decided against machine learning to prioritize interpretability, though ML is proposed for future work
 
-### Interpretability
+---
 
-Each feature in the dataset corresponds directly to a real-world logistics factor,
-such as traffic congestion, fuel consumption, or driver behavior. This connection
-makes model outputs easier to explain and justify to decision-makers, because
-the model is built on the same variables they already monitor and understand.
+## 📈 Findings
 
-### Flexibility
+- **No strong single predictors** of delay  
+- **Port congestion** was consistently among the top (albeit weak) indicators  
+- **Compounded risks** (e.g., high traffic + low equipment availability) were the strongest contributors to delay  
+- Traditional correlation methods are insufficient alone—interaction analysis is more informative  
+- Literature supports a ripple effect in supply chains (Jusda 2023, IMF 2022, MIT SCM 2023)
 
-The dataset is structured to support multiple types of machine learning tasks.
-It can be used to train regression models that estimate delivery delays in hours,
-classification models that categorize shipments by risk level. This dual-purpose
-flexibility is ideal for real-world applications where different problems require
-different modeling approaches.
+![Figure III: Interaction Heatmap of Top Risk Factors](./4_data_analysis/images/figure3_interaction_heatmap.png)
 
-### Real-Time Fit
+*Figure III: A visual representation of how compound factors (e.g., high port congestion + low inventory) lead to greater delivery time deviations.*
 
-Because the data is recorded on an hourly basis, it aligns well with how logistics
-operations are managed in practice. Planners and dispatchers make decisions throughout
-the day, and having time-stamped snapshots allows models to provide insights that
-are both timely and actionable during live operations.
+---
 
-## 🔄 Delivery Modeling Flow
+## ⚠️ Limitations & Future Work
 
-![modeling_flow](https://github.com/user-attachments/assets/57e280a4-e092-460e-a8ed-85790c50f8f5)
+- Data is cross-sectional—not time-series
+- Some sensors recorded implausible values (e.g., –10°C in California)
+- No product-type differentiation (perishable vs. non-perishable)
+- Missing high-impact disruption records (e.g., labor strikes, natural disasters)
 
-## Limitations of the Model
+**Next Steps**:
+- Use machine learning (e.g., XGBoost + SHAP) for deeper pattern detection
+- Incorporate time-series and geospatial context
+- Build risk dashboards for supply chain managers
 
-### Lacks Temporal Tracking
+---
 
-The dataset treats each shipment record as an isolated snapshot in time.
-While this is useful for analysis, it limits the ability to understand how
-a shipment's condition evolves hour by hour. Without tracking progression across
-time steps, the model can miss trends or cascading delays.
+## 📆 Project Milestones
 
-### GPS-Only Location Data
+| Milestone | Description |
+|----------|-------------|
+| **0 - Cross-Cultural Collaboration** | Established norms, set up GitHub, and coordinated across diverse backgrounds. |
+| **1 - Problem Identification** | Researched domain and scoped our problem within retail logistics. |
+| **2 - Data Collection** | Selected and cleaned Southern California logistics data. |
+| **3 - Data Analysis** | Ran statistical and interaction-based analyses. |
+| **4 - Communicating Results** | Created visualizations and translated findings for stakeholders. |
+| **5 - Final Presentation** | Presented insights to MIT Emerging Talent cohort and partners. |
 
-Although the dataset includes precise latitude and longitude, it lacks contextual
-location fields such as city, state, or route identifiers. This makes it harder to
-analyze trends regionally or understand how geography affects delivery performance.
+---
 
-### No Product Type Information
+## 🧰 Tech Stack
 
-All shipments are treated thesame, regardless of what’s being delivered. However,
-different types of cargo—such as perishable food, electronics, or industrial
-equipment—may be more or less sensitive to delays or environmental conditions. Without
-this information, the model may overlook key risk differences.
+- **Python**: `pandas`, `numpy`, `matplotlib`, `seaborn`
+- **Jupyter Notebooks**: for EDA and modeling
+- **Tableau**: for stakeholder dashboards
+- **GitHub**: for version control and collaboration
 
-### Limited Extreme Disruption Data
+---
 
-The dataset may not contain many examples of high-impact disruptions such as natural
-disasters, labor strikes, or system-wide breakdowns. As a result, models trained
-on this data may not perform well under rare but critical scenarios that demand
-fast and accurate predictions.
+## 🗂️ Repository Structure
+
+```plaintext
+The-Express/
+├── 0_domain_study/                 # Background research and brainstorming
+│   ├── README.md
+│   ├── brainstorming.md
+│   └── guide.md
+│
+├── 1_datasets/                     # Raw, cleaned, and unused datasets
+│   ├── cleaned_and_processed_data/
+│   ├── raw_data/
+│   ├── unused_data_set_1/
+│   ├── README.md
+│   └── guide.md
+│
+├── 2_data_preparation/            # Data loading and cleaning scripts
+│   ├── clean_dataset.py
+│   ├── README.md
+│   └── guide.md
+│
+├── 3_data_exploration/            # EDA notebooks and summaries
+│   ├── eda_supply_chain.ipynb
+│   ├── README.md
+│   └── guide.md
+│
+├── 4_data_analysis/               # Modeling and correlation summaries
+│   ├── images/
+│   ├── notebooks/
+│   ├── summary_of_analysis_of_cdsp.md
+│   ├── README.md
+│   └── guide.md
+│
+├── 5_communication_strategy/      # Messaging, storytelling, stakeholder focus
+│   ├── README.md
+│   └── guide.md
+│
+├── 6_final_presentation/          # Public-facing presentation files
+│   ├── README.md
+│   └── guide.md
+│
+├── collaboration/                 # Team norms and retrospective notes
+│   ├── guide/
+│   ├── retrospectives/
+│   ├── communication.md
+│   ├── constraints.md
+│   ├── learning_goals.md
+│   └── README.md
+│
+├── notes/                         # Miscellaneous team notes
+│   └── README.md
+│
+├── requirements.txt               # Python dependencies
+└── README.md                      # Main documentation
+⚙️ Setup & Usage
+Clone the repository:
+
+bash
+Copy
+Edit
+git clone https://github.com/YOUR_ORG/The-Express.git
+cd The-Express
+Create and activate a virtual environment:
+
+bash
+Copy
+Edit
+python -m venv venv
+source venv/bin/activate        # On Windows: venv\Scripts\activate
+pip install -r requirements.txt
+Launch notebooks:
+
+bash
+Copy
+Edit
+jupyter notebook
+👥 Team & Collaboration
+Name	GitHub
+Jawid Mohseni	@JawidMohseni
+Razan Ibrahim	@Razan-O-Elobeid
+Rumiya	@Ismatova-Rumiya
+Alemayehu Desta	@Alemayehu-Desta
+Omnia	@omniaNS
+
+See collaboration/ for team norms and retrospective documentation.
+
+📄 License
+This project is licensed under the MIT License. See LICENSE for full terms.
+
+🙏 Acknowledgments
+We thank the MIT Emerging Talent Program, our mentors, and supply chain stakeholders for their guidance. Special thanks to open-source communities and platforms like Kaggle for making impactful data accessible.
