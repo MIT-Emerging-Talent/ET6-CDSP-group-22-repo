@@ -62,7 +62,7 @@ She could serve as a valuable **external voice**, **collaborator**, or
 
 ### Primary Channel
 
-**LinkedIn**  
+## LinkedIn
 
 **Why LinkedIn?**
 
