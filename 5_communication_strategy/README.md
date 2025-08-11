@@ -1,5 +1,10 @@
 # Communication Strategy
 
+## Overview
+
+Developed dual-target communication strategy to validate our research findings
+from both academic and industry perspectives.
+
 ## Primary Target Audience: Graduate Student at MIT CTL
 
 **Profile:** A PhD student at MIT Center for Transportation & Logistics with
