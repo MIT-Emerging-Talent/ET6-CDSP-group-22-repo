@@ -60,10 +60,9 @@ ______________________________________________________________________
 |                                  | logistics operations.                 |
 | **3 - Data Analysis**            | Conducted EDA, correlation analysis,  |
 |                                  | and interaction modeling.             |
-| **4 - Communicating Results**    | Designed visuals and messaging        |
-|                                  | tailored to supply chain stakeholders.|
-| **5 - Final Presentation**       | Shared findings with MIT Emerging     |
-|                                  | Talent faculty, peers, and partners.  |
+| **4 - Communicating Results**    | Specified target audience, developed  |
+|                                  | communication strategy, and created |
+|                                  | tailored communication artifacts. |
 
 ______________________________________________________________________
 
@@ -167,6 +166,22 @@ ______________________________________________________________________
 *Figure I: A heatmap showing the correlation between key features and delivery time.*
 
 ![Heatmap](./4_data_analysis/images/figure_5.jpeg)
+
+______________________________________________________________________
+
+## Communication Strategy
+
+Developed targeted outreach to an MIT CTL graduate student for research
+guidance following unexpected weak correlation findings.
+
+**Target Audience:** PhD students in supply chain analytics at MIT Center for
+Transportation & Logistics
+
+**Communication Artifact:** Professional LinkedIn message with GitHub repository
+access
+
+**Goal:** Evaluate analytical approach, assess if weak correlations are typical,
+and potentially connect with broader MIT CTL research community
 
 ______________________________________________________________________
 
