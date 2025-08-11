@@ -1,6 +1,6 @@
 # Communication Strategy
 
-## Target Audience: Graduate Student at MIT CTL
+## Primary Target Audience: Graduate Student at MIT CTL
 
 **Profile:** A PhD student at MIT Center for Transportation & Logistics with
 strong background in analytics and data science. Specializes in supply chain
@@ -119,3 +119,12 @@ chain findings
 >
 > Best regards,
 > MIT Emerging Talent Certificate Program Team
+
+---
+
+## Secondary Target: Industry Practitioner  
+
+Professional supply chain data analyst with retail logistics experience and active
+LinkedIn presence for real-world validation of our findings.
+
+**Details:** [See second_target_audience.md](./second_target_audience.md)
