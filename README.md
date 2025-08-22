@@ -202,7 +202,7 @@ ______________________________________________________________________
 - Develop a real-time dashboard for managers
 
 ______________________________________________________________________
-# Final Presentation
+## Final Presentation
 
 Our final project presentation for **MIT Emerging Talent – Group 22**:  
 [MIT Group 22 Final Presentation](
