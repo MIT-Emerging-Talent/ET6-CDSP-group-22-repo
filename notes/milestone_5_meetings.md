@@ -30,3 +30,21 @@ the next meeting.
 - Enhanced slides and scripts through group feedback.  
 - Agreed on the final structure of the presentation.  
 - Scheduled peer review meeting with Group 17 for next Wednesday.
+
+---
+
+## Meeting 3 – August 20, 2025  
+
+**Time:** 12:30 PM EST  
+**Attendees:** all team members (Jawid, Razan, Rumiya, Omnia, Alemayehu)  
+
+### Summary  
+
+- Reflected on feedback from Group 17’s peer review session.  
+- Discussed how to adapt slides for a non-technical audience.
+- Agreed to simplify slides, reduce text, and shift more toward a storytelling approach.
+- Decided to modify the script accordingly to match the simplified slides.  
+- Assigned tasks:  
+  - Slide modifications  
+  - Milestone README  
+  - Retrospective document  
