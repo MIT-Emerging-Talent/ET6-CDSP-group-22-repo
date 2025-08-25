@@ -206,13 +206,12 @@ ______________________________________________________________________
 ## Final Presentation
 
 Our final project presentation for **MIT Emerging Talent – Group 22**:  
-[MIT Group 22 Final Presentation](
-./6_final_presentation/Final_Presentation.pptx)
+[MIT Group 22 Final Presentation](./6_final_presentation/final_presentation.pptx)
 
 We’ve also included:
 
-- [Presentation Outline](./6_final_presentation/outline.md)
-- [Presentation Script](./6_final_presentation/script.md)
+- [Presentation Outline](./6_final_presentation/README.md)
+- [Presentation Script](./6_final_presentation/presentation_script.md)
 
 ## Tech Stack
 
