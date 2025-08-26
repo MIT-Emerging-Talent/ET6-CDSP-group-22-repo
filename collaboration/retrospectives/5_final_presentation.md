@@ -54,3 +54,14 @@ thoughtfully, encouraging open, respectful communication, and recognizing when
 it is better to discuss and when it is more useful to debate. On the positive side,
 I stayed on track with my tasks and engaged in peer feedback, which helped strengthen
 the quality of our final presentation.
+
+### Razan
+
+In this milestone, I contributed by shaping the research results and refining
+the whole project with the group. This was important to ensure that it could
+reach the audience clearly. We also discussed different ideas and tried to
+determine which were more suitable for our presentation and would be
+most useful. Additionally, we greatly benefited from the peer feedback provided
+by **Group 17**.
+
+---
